@@ -9,9 +9,9 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-   public function up(){
-    Schema::create('eventos', function (Blueprint $table) 
-    {
+   public function up()
+  {
+    Schema::create('eventos', function (Blueprint $table) {
         $table->id();
         $table->string('titulo');
         $table->text('descripcion')->nullable();
@@ -21,6 +21,7 @@ return new class extends Migration
         $table->timestamps();
     });
 }
+
 
     /**
      * Reverse the migrations.
